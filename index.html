@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeadPool</title>
+
+   <!-- CDN Font-Awesome========================================= -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Linkiamos la fuente a utilizar ========================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+    <!-- Linquiamos los estilos.css que haremos al html -->
+    <link rel="stylesheet" href="variables__colores.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header y la etiqueta de navegación -->
+
+    <header>
+        <div class="base__contenedor">
+            <nav class="container">
+                <div class="container-1">
+                    <p>Deadpool</p>
+                </div>
+    
+                <ul class="container-2" >
+                    <button class="boton__menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#actor" class="a-modificado">Actor</a></li>
+                    <li><a href="#personajes">Personajes</a></li>
+                    <li><a href="#parteFinal" class="a-modificado">Valoración</a></li>
+
+                </ul>
+                <button class="boton__menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <!-- Fondo del viewpor Height y palabras de presentacion -->
+
+    <div class="contenedor__seccion2">
+        <section class="container-secundario">
+            <div class="container-relative">
+                <div class="container-absolute">
+                    <div class="container-secundario-1">
+                        <h3> <span>Marvel </span>Studios</h3>
+                    </div>
+                    <div class="container-secundario-2">
+                        <h3> Reparto <span id="reparto__principal"></span></h3>
+                    </div>
+                    <div class="container-secundario-3">
+                        <button>
+                           <span id="icono__reproducir"> <i class="fa-solid fa-circle-play"></i></span>
+                            <span>Reproducir</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+    <!-- Conclui con la parte del header y sus componentes que presenta la pagina web -->
+
+    <div class="contenedor--1" id="actor">
+        <div class="contenedor--2">
+            <h3>Actor Principal</h3>
+        </div>
+        <div class="caja__botones__slider">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <div class="contenedor__slider">
+            <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img loading="lazy"   src="imagenes-slider/dead-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img loading="lazy"   src="imagenes-slider/dead-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img loading="lazy"   src="imagenes-slider/dead-3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img loading="lazy"   src="imagenes-slider/dead-44.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img loading="lazy"   src="imagenes-slider/dead-444.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img loading="lazy"   src="imagenes-slider/dead-5.jpg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Construiremos un slider automatico de las imagenes de deadpool -->
+   <!-- <div class="contenedor-principal" id="fer">
+        <div class="contenedor">
+            <div class="contenedor-slider">
+                <div class="imagenes">
+                    <img loading="lazy" src="imagenes-slider/dead-8.jpg" alt="img-deadpool">
+                </div>
+                <div class="imagenes">
+                    <img loading="lazy" src="imagenes-slider/dead-3.jpg" alt="img-deadpool">
+                </div>
+                <div class="imagenes">
+                    <img loading="lazy" src="imagenes-slider/dead-44.jpg" alt="img-deadpool">
+                </div>
+                <div class="imagenes">
+                    <img loading="lazy" src="imagenes-slider/dead-5.jpg" alt="img-deadpool">
+                </div>
+                <div class="imagenes">
+                    <img loading="lazy" src="imagenes-slider/dead-444.jpg" alt="img-deadpool">
+                </div>
+                <div class="imagenes">
+                    <img src="imagenes-slider/dead-1.jpg" alt="img-deadpool">
+                </div>
+                <div class="imagenes">
+                    <img src="imagenes-slider/dead-9.jpg" alt="img-deadpool">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contenedor-secundario-slider">
+            <div class="contenedor-h3">
+                <h3>Ryan Reynolds.<span>&#160</span></h3>
+            </div>
+            <p>Deadpool es un personaje de ficción que fue creado por la corporación Marvel Comics. ... El nombre del personaje Deadpool deriva de la unión de dos palabras en inglés. Por un lado Dead que es muerto y Pool que es pozo o masacre; por lo que la traducción de Deadpool en español es Masacre o Pozo de muerte. Deadpool es una película de superhéroes estadounidense basada en el personaje de Marvel Comics del mismo nombre y dirigida por Tim Miller.</p>
+            <p>Wade Wilson, tras ser sometido a un cruel experimento científico, adquiere poderes especiales que le convierten en Deadpool. Armado con sus nuevas habilidades y un retorcido sentido del humor tratará de dar caza al hombre que casi destruye su vida.</p>
+        </div>
+   </div>  -->
+
+   <!-- Creamos la parte de los personajes secundarios de la pelicula de DeadPool -->
+<!-- 
+   <section class="contenedorr" id="personajes">
+       <div>
+           <div class="personajes">
+               <div class="personajes-contenedor">
+                   <h1>Personajes<span> &#160</span></h1>
+               </div>
+           </div>
+           <div class="contenedor-cajas">
+               <div class="caja">
+                   <img src="personajes/vanesa.jpg" alt="Vanesa Novia de deadpool">
+                   <p>Vanessa Carlysle <br> </p>
+                   <p class="p-modificado">En las historietas de Marvel, la novia de Deadpool es conocida como Copycat y tiene la habilidad de copiar la forma física, los poderes y las impresiones mentales de otras personas. Así que, quién sabe, quizá la conozcamos como una versión más fiel al cómic en futuras entregas.</p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/coloso.jpg" alt="Coloso Amigo de Deadpool">
+                   <p>Coloso</p>
+                   <p class="p-modificado">Piotr "Peter" Nikolaievitch Rasputin, alias Coloso, es un superhéroe ficticio de la editorial Marvel Comics. Es uno de los personajes principales de los X-Men. Fue creado por Len Wein y Dave Cockrum e hizo su primera aparición en Giant-Size X-Men #1 en 1975.</p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/dopinder.jpg" alt="Dopinder Compañero de DeadPool">
+                   <p>Dopinder</p>
+                   <p class="p-modificado">Mientras trabaja como taxista en la ciudad de Nueva York, Dopinder se obsesiona con ganarse el corazón de una mujer llamada Gita. Sin embargo, su primo, Bandhu, la conquista. Un día, el mercenario conocido como Deadpool solicita los servicios de taxista de Dopinder</p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/ajax.png" alt="Ajax">
+                   <p>Ajax</p>
+                   <p class="p-modificado">Francis "Fanny" Freeman es un supervillano ficticio que apareció por primera vez en Deadpool # 14 y fue creado por el escritor Joe Kelly y el artista Walter McDaniel. Ed Skrein interpretó a Ajax en la película de 2016 Deadpool.</p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/negasonic.jpg" alt="Negasonic">
+                   <p>negasonic</p>
+                   <p class="p-modificado">Negasonic Teenage Warhead (nombre real Ellie Phimister) es un personaje ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics. El personaje fue creado por Grant Morrison y Frank Quitely.</p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/ciega ai.jpg" alt="Ciega tia de deadpool">
+                   <p>Ciega Ai</p>
+                   <p class="p-modificado">La Ciega Al (de Althea) es una anciana ciega que comparte hogar con el mercenario Wade Wilson. Mientras estaba en una lavandería un día, Al se encontró con Wade Wilson, que estaba en el medio de eliminar manchas de sangre de su ropa</p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/juguernot.jpg" alt="juguernot">
+                   <p>Juggernaught</p>
+                   <p class="p-modificado">Juggernaut es un personaje ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics. El personaje, que apareció por primera vez en X-Men # 12, fue creado por el escritor Stan Lee y el artista / coguionista Jack Kirby.</p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/cable.jpg" alt="Cable">
+                   <p>Cable (Josh Brolin)</p>
+                   <p class="p-modificado">Poco se sabe sobre el pasado de Cable, solo fragmentos como que nació en un futuro apocalíptico devastado por la guerra. En algún punto de su vida, Cable se casó y tuvo una hija llamada Hope, se mejoró biónicamente y se convirtió en un viajero en el tiempo.</p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/comadreja.jpg" alt="Comadreja (Weasel)">
+                   <p>Comadreja (Weasel)</p>
+                   <p class="p-modificado">
+                    Más conocido como Jack Hammer. Es el mejor amigo de Deadpool, su Sancho Panza, su Kemo Sabe, su... bueno, ya lo sabéis. En la película, T.J. Miller da vida a este personajillo que regenta un antro frecuentado por mercenarios, matones y asesinos como Wade Wilson.
+                   </p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/polvo.jpg" alt="polvo de angel">
+                   <p>Polvo de Ángel</p>
+                   <p class="p-modificado">
+                    Polvo de Ángel es un personaje ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics. Creado por el escritor Geoff Johns y el artista Shawn Martinbrough, el personaje apareció por primera vez en Morlocks # 1.
+                   </p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/dominoo.jpg" alt="Domino">
+                   <p>Domino (Zazie Beetz)</p>
+                   <p class="p-modificado">Dominó es un personaje ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics. El personaje es mejor conocido como miembro del equipo mutante X-Force</p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/surge.jpg" alt="surge">
+                   <p>Surge (Shioli Kutsuna)</p>
+                   <p class="p-modificado">Ella es un personaje súper menor. El nombre del personaje es Yukio, una asesina, pero como es una asesina adulta, la hemos rejuvenecido". Con estas palabras confirman que Yukio es la asesina japonesa que vimos en la película Lobezno Inmortal.</p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/bedlann.jpg" alt="Bedlam (Terry Crews)">
+                   <p>Bedlam (Terry Crews)</p>
+                   <p class="p-modificado">Jesse Bedlam, el personaje al que interpretará Terry Crews, apareció por primera vez en 1995 en el cómic Factor X #1, quien es un mutante experto en el combate cuerpo a cuerpo que posee súper fuerza y puede generar campos electromagnéticos.</p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/chabalo2.jpg" alt="Julian Dennison">
+                   <p>Julian Dennison</p>
+                   <p class="p-modificado">Dennison interpretó a Russell Collins en la película de 2018 Deadpool 2. Fue elegido por su actuación en Wilderpeople y la amistad de Waititi con los cineastas de Deadpool.4​5​ En junio de 2018 Dennison fue el primero en ser elegido para Godzilla vs. Kong </p>
+               </div>
+               <div class="caja">
+                   <img src="personajes/bomito.jpg" alt="Vomito">
+                   <p>Zeitgeist</p>
+                   <p class="p-modificado">Axel Cluney o mejor conocido como Zeitgeist era un mutante que otras personas lo ignoraban por sus condiciones hasta llegar a la pubertad, un día a los 14 años Alex había asistido a una fiesta en la que también asistió una chica.</p>
+               </div>
+           </div>
+
+           <div class="contenedor-footer">
+               <p>¡DeadPool <span>Ryan Reynolds!</span></p>
+           </div>
+       </div>
+   </section> -->
+
+   <!-- Hacemos la ultima parte de la pagina -->
+
+   <!-- <div class="cajabase" id="parteFinal">
+       <div class="cajita1">
+           <div class="caja-con">
+               <h2>Indica Tu Personaje Favorito</h2>
+            <h3>¡Universo de Marvel!<span>&#160</span></h3>
+           </div>
+           <form action="">
+                <input type="text" placeholder="Nombres">
+                <select name="" id="">
+                    <option value="">DeadPool</option>
+                    <option value="">Vanessa Carlysle</option>
+                    <option value="">Coloso</option>
+                    <option value="">Dopinder</option>
+                    <option value="">Ajax</option>
+                    <option value="">negasonic</option>
+                    <option value="">Ciega Ai</option>
+                    <option value="">Juggernaught</option>
+                    <option value="">Cable (Josh Brolin)</option>
+                    <option value="">Comadreja (Weasel)</option>
+                    <option value="">Polvo de Ángel</option>
+                    <option value="">Domino (Zazie Beetz)</option>
+                    <option value="">Surge (Shioli Kutsuna)</option>
+                    <option value="">Bedlam (Terry Crews)</option>
+                    <option value="">Julian Dennison</option>
+                    <option value="">Zeitgeist</option>
+
+                </select>
+                <textarea name="" id="" cols="20" rows="5" placeholder="¿Pórque es Tú Personaje Favorito?"></textarea>
+                <input type="submit">
+           </form>
+
+       </div>
+   </div> -->
+
+
+   <!-- Hacemos el footer-> la parte final de la página web -->
+
+   <!-- <footer>
+       <div class="contenedor-caja-footer">
+           <p>Created By Jóse Flores |  2020 All rights reserved.</p>
+       </div>
+   </footer> -->
+
+   
+    <!-- Libreria swiper.js =============================================== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+       <!-- Importamos el CDN de la libreria Typed.js================================== -->
+       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Linquiamos los Codigos de JavaScript -->
+    <script src="mainJava.js"></script>
+</body>
+</html> 

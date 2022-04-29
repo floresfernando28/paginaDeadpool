@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: crimson;
+}
+body::-webkit-scrollbar{
+    background-color: var(--negro__oscuro);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: crimson;
+    border-radius: 5px;
+}
+
+/* Comenzamos los estilos ala pagina */
+
+header {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+header.active{
+    background-color: crimson;
+    transition: .6s;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,.1);
+}
+.base__contenedor {
+    width: 90%;
+    margin: auto;
+}
+.base__contenedor .container {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+
+}
+.container-2  li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--blanco__hsl);
+}
+.container-2  li a:hover {
+    transition: .2s;
+    color: crimson;
+}
+
+.container-1 p {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: crimson;
+}
+header.active .container-1 p{
+    color: var(--blanco);
+}
+.container-2  {
+    display: flex;
+    gap: 20px;
+
+}
+.container-2  li {
+    list-style: none;
+}
+
+/* estilos ala parte inicial */
+.container-secundario {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contenedor__seccion2  {
+    width: 100%;
+    height: 100vh;
+    background: url(personajes/deadpool-21.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-secundario-1 h3 {
+    color: crimson;
+    font-size: 2.6em;
+    font-weight: 600;
+}
+.container-secundario-1 span {
+    color: var(--blanco__hsl);
+}
+.container-secundario-2  h3{
+    font-size: 2em;
+    font-weight: 600;
+    color: crimson;
+}
+.container .boton__menu {
+    background: none;
+    display: none;
+    color: var(--blanco);
+    font-size: 1.1em;
+    border:  none; 
+    outline: none;
+    cursor: pointer;
+}
+
+
+.container-secundario-2  span {
+    color: var(--blanco__hsl);
+}
+.container-secundario-3 {
+    margin-top: -10px;
+}
+.container-secundario-3 button {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 0.7em 0px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--blanco);
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.container-secundario-3 #icono__reproducir {
+    color: crimson;
+    animation: animate 2s linear infinite;
+    font-size: 1.8em;
+    border-radius: 50%;
+    padding: 3px 10px;
+}
+
+/* Animacion para el boton */
+@keyframes animate {
+    0%{
+        box-shadow: 0 0 0 0 crimson;
+    }
+    40%{
+        box-shadow: 0 0 0 30px  rgb(255, 193, 7, 0);
+    }
+    80%{
+        box-shadow: 0 0 0 20px rgb(255, 193, 7, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgb(255, 193, 7, 0);
+    }
+}
+
+/* Modo Responsive */
+@media (max-width: 769px){
+    .container-2  {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background-color: var(--negro__oscuro);
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-2  li a:hover {
+        color: crimson;
+    }
+    .container .boton__menu {
+        display: block;
+    }
+    .container .boton__menu:first-child{
+        align-self: flex-end;
+       position: absolute;
+       right: 5.4%;
+       top: 4%;
+    }
+    .container-2.active {
+        left: 0;
+        transition: .6s;
+    }
+    .container-1 p {
+        font-size: 1.4em;
+    }
+    .container-secundario-1 h3 {
+        font-size: 2.1em;
+        font-weight: 600;
+    }
+    .container-secundario-2 h3{
+        font-size: 1.3em;
+    }
+ }
+
+ /* Finalizacion de estilos al header */
+.contenedor--1{
+    width: 90%;
+    margin: 40px auto 40px auto;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor--2 {
+     text-align: center;
+     padding: 1em 0px 1em 1em;
+     color: crimson;
+
+}
+
+.contenedor__slider {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caja__botones__slider {
+    position: relative;
+    background-color: var(--blanco);
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.caja__botones__slider .swiper-button-next::after,
+.caja__botones__slider .swiper-button-prev::after {
+    color: crimson;
+    font-size: 1.5em;
+
+}
